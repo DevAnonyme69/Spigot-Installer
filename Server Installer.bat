@@ -34,7 +34,8 @@ exit
 color 09
 echo.
 echo [1] 1.8          [2] 1.8.3         [3] 1.8.4         [4] 1.8.5
-echo [5] 1.8.6        [6] 1.8.7         [7] 1.8.8
+echo [5] 1.8.6        [6] 1.8.7         [7] 1.8.8         [8] 1.9
+echo [9] 1.9.2        [10] 1.9.4        [11] 1.10         [12] 1.10.2
 echo. 
 set /p spigot="Which version of spigot do you want to install? : "
 
@@ -45,6 +46,11 @@ if /i {%SPIGOT%}=={4} (goto :download4)
 if /i {%SPIGOT%}=={5} (goto :download5)
 if /i {%SPIGOT%}=={6} (goto :download6)
 if /i {%SPIGOT%}=={7} (goto :download7)
+if /i {%SPIGOT%}=={8} (goto :download8)
+if /i {%SPIGOT%}=={9} (goto :download9)
+if /i {%SPIGOT%}=={10} (goto :download10)
+if /i {%SPIGOT%}=={11} (goto :download11)
+if /i {%SPIGOT%}=={12} (goto :download12)
 pause
 exit
 
@@ -118,4 +124,52 @@ goto :menu
 pause
 exit
 
+:download8
+color f
+echo Start of spigot 1.9 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.9-R0.1-SNAPSHOT-latest.jar --output spigot.jar
+echo Spigot 1.9 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
 
+:download9
+color f
+echo Start of spigot 1.9.2 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.9.2-R0.1-SNAPSHOT-latest.jar --output spigot.jar
+echo Spigot 1.9.2 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download10
+color f
+echo Start of spigot 1.9.4 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.9.4-R0.1-SNAPSHOT-latest.jar --output spigot.jar
+echo Spigot 1.9.4 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download11
+color f
+echo Start of spigot 1.10 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.10-R0.1-SNAPSHOT-latest.jar --output spigot.jar
+echo Spigot 1.10 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download12
+color f
+echo Start of spigot 1.10.2 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.10.2-R0.1-SNAPSHOT-latest.jar --output spigot.jar
+echo Spigot 1.10.2 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
