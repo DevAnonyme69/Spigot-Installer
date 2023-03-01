@@ -24,7 +24,7 @@ IF EXIST spigot.jar (
 	echo.
 	echo Starting the server in progress...
 	echo.
-	title HUB
+	title Server Installer
 	java -Xmx1G -jar spigot.jar
 )
 pause
@@ -36,11 +36,15 @@ echo.
 echo [1] 1.8          [2] 1.8.3         [3] 1.8.4         [4] 1.8.5
 echo [5] 1.8.6        [6] 1.8.7         [7] 1.8.8         [8] 1.9
 echo [9] 1.9.2        [10] 1.9.4        [11] 1.10         [12] 1.10.2
-echo [13] 1.11        [14] 1.11.1       [15] 1.11.2 	    [16] 1.12
-echo [17] 1.12.1      [18] 1.12.2
+echo [13] 1.11        [14] 1.11.1       [15] 1.11.2 	     [16] 1.12
+echo [17] 1.12.1      [18] 1.12.2       [19] 1.13         [20] 1.13.1
+echo [21] 1.13.2      [22] 1.14         [23] 1.14.1       [24] 1.14.2
+echo [25] 1.14.3      [26] 1.14.4
 echo. 
+echo                           [99] Back to main menu.
+echo.
 set /p spigot="Which version of spigot do you want to install? : "
-
+if /i {%SPIGOT%}=={99} (goto :downloadExit)
 if /i {%SPIGOT%}=={1} (goto :download1)
 if /i {%SPIGOT%}=={2} (goto :download2)
 if /i {%SPIGOT%}=={3} (goto :download3)
@@ -59,6 +63,19 @@ if /i {%SPIGOT%}=={15} (goto :download15)
 if /i {%SPIGOT%}=={16} (goto :download16)
 if /i {%SPIGOT%}=={17} (goto :download17)
 if /i {%SPIGOT%}=={18} (goto :download18)
+if /i {%SPIGOT%}=={19} (goto :download19)
+if /i {%SPIGOT%}=={20} (goto :download20)
+if /i {%SPIGOT%}=={21} (goto :download21)
+if /i {%SPIGOT%}=={22} (goto :download22)
+if /i {%SPIGOT%}=={23} (goto :download23)
+if /i {%SPIGOT%}=={24} (goto :download24)
+if /i {%SPIGOT%}=={25} (goto :download25)
+if /i {%SPIGOT%}=={26} (goto :download26)
+pause
+exit
+
+:downloadExit
+goto :menu
 pause
 exit
 
@@ -237,6 +254,86 @@ color f
 echo Start of spigot 1.12.2 download!
 curl https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar --output spigot.jar
 echo Spigot 1.12.2 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download19
+color f
+echo Start of spigot 1.13 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.13.jar --output spigot.jar
+echo Spigot 1.13 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download20
+color f
+echo Start of spigot 1.13.1 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.13.1.jar --output spigot.jar
+echo Spigot 1.13.1 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download21
+color f
+echo Start of spigot 1.13.2 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar --output spigot.jar
+echo Spigot 1.13.2 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download22
+color f
+echo Start of spigot 1.14 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.14.jar --output spigot.jar
+echo Spigot 1.14 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download23
+color f
+echo Start of spigot 1.14.1 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.14.1.jar --output spigot.jar
+echo Spigot 1.14.1 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download24
+color f
+echo Start of spigot 1.14.2 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.14.2.jar --output spigot.jar
+echo Spigot 1.14.2 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download25
+color f
+echo Start of spigot 1.14.3 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.14.3.jar --output spigot.jar
+echo Spigot 1.14.3 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download26
+color f
+echo Start of spigot 1.14.4 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.14.4.jar --output spigot.jar
+echo Spigot 1.14.4 successfully downloaded!
 color 09
 goto :menu
 pause
