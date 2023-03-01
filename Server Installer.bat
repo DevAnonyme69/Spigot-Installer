@@ -36,6 +36,8 @@ echo.
 echo [1] 1.8          [2] 1.8.3         [3] 1.8.4         [4] 1.8.5
 echo [5] 1.8.6        [6] 1.8.7         [7] 1.8.8         [8] 1.9
 echo [9] 1.9.2        [10] 1.9.4        [11] 1.10         [12] 1.10.2
+echo [13] 1.11        [14] 1.11.1       [15] 1.11.2 	    [16] 1.12
+echo [17] 1.12.1      [18] 1.12.2
 echo. 
 set /p spigot="Which version of spigot do you want to install? : "
 
@@ -51,6 +53,12 @@ if /i {%SPIGOT%}=={9} (goto :download9)
 if /i {%SPIGOT%}=={10} (goto :download10)
 if /i {%SPIGOT%}=={11} (goto :download11)
 if /i {%SPIGOT%}=={12} (goto :download12)
+if /i {%SPIGOT%}=={13} (goto :download13)
+if /i {%SPIGOT%}=={14} (goto :download14)
+if /i {%SPIGOT%}=={15} (goto :download15)
+if /i {%SPIGOT%}=={16} (goto :download16)
+if /i {%SPIGOT%}=={17} (goto :download17)
+if /i {%SPIGOT%}=={18} (goto :download18)
 pause
 exit
 
@@ -173,3 +181,64 @@ color 09
 goto :menu
 pause
 exit
+
+:download13
+color f
+echo Start of spigot 1.11 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.11.jar --output spigot.jar
+echo Spigot 1.11 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download14
+color f
+echo Start of spigot 1.11.1 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.11.1.jar --output spigot.jar
+echo Spigot 1.11.1 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download15
+color f
+echo Start of spigot 1.11.2 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar --output spigot.jar
+echo Spigot 1.11.2 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download16
+color f
+echo Start of spigot 1.12 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.12.jar --output spigot.jar
+echo Spigot 1.12 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download17
+color f
+echo Start of spigot 1.12.1 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.12.1.jar --output spigot.jar
+echo Spigot 1.12.1 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download18
+color f
+echo Start of spigot 1.12.2 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar --output spigot.jar
+echo Spigot 1.12.2 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
