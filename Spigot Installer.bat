@@ -21,7 +21,9 @@ echo [17] 1.12.1      [18] 1.12.2       [19] 1.13         [20] 1.13.1
 echo [21] 1.13.2      [22] 1.14         [23] 1.14.1       [24] 1.14.2
 echo [25] 1.14.3      [26] 1.14.4       [27] 1.15         [28] 1.15.1
 echo [29] 1.15.2      [30] 1.16.1       [31] 1.16.2       [32] 1.16.3
-echo [33] 1.16.4      [34] 1.16.5
+echo [33] 1.16.4      [34] 1.16.5       [35] 1.17         [36] 1.17.1
+echo [37] 1.18        [38] 1.18.1       [39] 1.18.2       [40] 1.19
+echo [41] 1.19.1      [42] 1.19.2       [43] 1.19.3
 echo. 
 echo                           [99] Back to main menu.
 echo.
@@ -61,6 +63,15 @@ if /i {%SPIGOT%}=={31} (goto :download31)
 if /i {%SPIGOT%}=={32} (goto :download32)
 if /i {%SPIGOT%}=={33} (goto :download33)
 if /i {%SPIGOT%}=={34} (goto :download34)
+if /i {%SPIGOT%}=={35} (goto :download35)
+if /i {%SPIGOT%}=={36} (goto :download36)
+if /i {%SPIGOT%}=={37} (goto :download37)
+if /i {%SPIGOT%}=={38} (goto :download38)
+if /i {%SPIGOT%}=={39} (goto :download39)
+if /i {%SPIGOT%}=={40} (goto :download40)
+if /i {%SPIGOT%}=={41} (goto :download41)
+if /i {%SPIGOT%}=={42} (goto :download42)
+if /i {%SPIGOT%}=={43} (goto :download43)
 pause
 exit
 
@@ -405,6 +416,96 @@ color f
 echo Start of spigot 1.16.5 download!
 curl https://cdn.getbukkit.org/spigot/spigot-1.16.5.jar --output spigot.jar
 echo Spigot 1.16.5 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download35
+color f
+echo Start of spigot 1.17 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.17.jar --output spigot.jar
+echo Spigot 1.17 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download36
+color f
+echo Start of spigot 1.17.1 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.17.1.jar --output spigot.jar
+echo Spigot 1.17.1 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download37
+color f
+echo Start of spigot 1.18 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.18.jar --output spigot.jar
+echo Spigot 1.18 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download38
+color f
+echo Start of spigot 1.18.1 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.18.1.jar --output spigot.jar
+echo Spigot 1.18.1 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download39
+color f
+echo Start of spigot 1.18.2 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.18.2.jar --output spigot.jar
+echo Spigot 1.18.2 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download40
+color f
+echo Start of spigot 1.19 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.19.jar --output spigot.jar
+echo Spigot 1.19 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download41
+color f
+echo Start of spigot 1.19.1 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.19.1.jar --output spigot.jar
+echo Spigot 1.19.1 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download42
+color f
+echo Start of spigot 1.19.2 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.19.2.jar --output spigot.jar
+echo Spigot 1.19.2 successfully downloaded!
+color 09
+goto :menu
+pause
+exit
+
+:download43
+color f
+echo Start of spigot 1.19.3 download!
+curl https://cdn.getbukkit.org/spigot/spigot-1.19.3.jar --output spigot.jar
+echo Spigot 1.19.3 successfully downloaded!
 color 09
 goto :menu
 pause
