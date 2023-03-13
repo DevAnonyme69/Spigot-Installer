@@ -3,7 +3,7 @@
 color 09
 title SpigotIntaller by DevAnonyme (v1)
 echo.
-echo        [1] Download Spigot
+echo        [1] Telecharger Spigot
 echo.
 set /p answer="Which option do you choose? : "
 if /i {%ANSWER%}=={1} (goto :download)
@@ -27,7 +27,7 @@ echo [41] 1.19.1      [42] 1.19.2       [43] 1.19.3
 echo. 
 echo                           [99] Back to main menu.
 echo.
-set /p spigot="Which version of spigot do you want to install? : "
+set /p spigot="Quelle version de spigot voulez-vous telecharger ? : "
 if /i {%SPIGOT%}=={99} (goto :downloadExit)
 if /i {%SPIGOT%}=={1} (goto :download1)
 if /i {%SPIGOT%}=={2} (goto :download2)
